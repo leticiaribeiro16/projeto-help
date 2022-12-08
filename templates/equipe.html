@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+  {% block titulo %}
+    Sobre
+  {% endblock %}
+
+{% block container %}
+<main class="main-sobre">
+  <div class="sobre">
+    <small><a href="/">Home</a> | <a href="/equipe">Equipe</a></small>
+    <h1>Equipe <span><i>Help!</i></span></h1>
+    <p>O projeto Help! foi idealizado por estudantes do 3° ano do curso técnico integrado em Informática para Internet do IFRN/ZN, após demanda ter sido concebida por meio de entrevistas com a comissão organizadora do processo seletivo do TAL 2022 do IFRN - Campus Natal Zona-Norte.</p>
+  </div>
+  <div class="group-cards">
+    <div class="card">
+        <img src="/static/img/elipse3.png" alt="lamp" class="img">
+      <h3>Bruna Gabriela</h3>
+      <p>Desenvolvedora Front-End</p>
+    </div>
+    <div class="card">
+        <img src="/static/img/elipse2.png" alt="cash" class="img">
+      <h3>Darllyane Torres</h3>
+      <p>Desenvolvedora MySQL</p>
+    </div>
+    <div class="card">
+        <img src="/static/img/elipse1.png" alt="graduation" class="img">
+      <h3>Letícia Ribeiro</h3>
+      <p>Desenvolvedora Back-End</p>
+    </div>
+  </div>
+</main>
+{% endblock %}

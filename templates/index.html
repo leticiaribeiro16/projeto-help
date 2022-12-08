@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>
+         Help! - 
+         {% block titulo %} Home {% endblock %}
+       </title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   </head>
+   <body>
+     <header>
+        <img src="/static/img/LOGO_HELP.svg" alt="logo" class="img-logo-index">
+       <nav>
+         <ul>
+           <li><a href="/">Início</a></li>
+          <li><a href='/sobre'>Sobre </a></li>
+          <li><a href='/edital'>Edital</a></li>
+          <li><a href='/equipe'>Equipe</a></li>
+          <li><a href='/avaliacao'>Avaliação</a></li>
+         </ul>
+       </nav>
+      <button type='submit'>Login</button> 
+     </header>
+     {% block container %}
+    <main class="main-login">
+      <div class="left-login">
+        <img src="/static/img/Idea.svg" alt="idea" class="idea">
+      </div>
+      <div class="right-login">
+        <img src="/static/img/text.svg" alt="idea" class="text">
+      </div>
+
+    </main>
+      {% endblock %}
+   </body>
+</html>
